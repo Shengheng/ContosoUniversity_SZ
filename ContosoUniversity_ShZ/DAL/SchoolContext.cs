@@ -19,6 +19,7 @@ namespace ContosoUniversity_ShZ.DAL
         public DbSet<Student> Students { get; set; }
         public DbSet<Person> People { get; set; }
         public DbSet<OfficeAssignment> OfficeAssignments { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
